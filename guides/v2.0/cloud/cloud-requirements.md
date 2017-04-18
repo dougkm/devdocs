@@ -49,6 +49,7 @@ For development and testing, we require the following:
 
 	You can enable and test individual features or extensions on different environments to make sure they are working before merging
 *	You must make sure that [`magento setup:install`]({{ page.baseurl }}install-gde/install/cli/install-cli-install.html)  and [`magento setup:upgrade`]({{ page.baseurl }}comp-mgr/cli/cli-upgrade.html) work and that any extensions and customizations compile correctly in production mode
+*	You must make sure that the application can be built without access to the database.  The build system does not ahve access to a Magento DB.
 *	You must test the application, including any extensions and customizations, against Varnish and/or Fastly well in advance of going live
 
 	In particular, verify that content is being cached as expected 
